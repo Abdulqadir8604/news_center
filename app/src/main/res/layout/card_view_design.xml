@@ -4,10 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="30dp"
+    android:layout_marginBottom="50dp"
     android:layout_gravity="center"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="20dp">
+    android:backgroundTint="#344955"
+    android:clickable="true"
+    app:cardCornerRadius="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,6 +22,9 @@
         <ImageView
             android:id="@+id/imageview"
             android:padding="10dp"
+            android:requiresFadingEdge="horizontal"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -31,35 +36,35 @@
             android:layout_marginLeft="15dp"
             android:text="Headline"
             android:padding="5dp"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/description_tv"
-            android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="15dp"
-            android:text="Description"
-            android:textSize="20sp"
-            android:padding="5dp"
-            android:textStyle="italic" />
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="Description"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textStyle="italic" />
+        </ScrollView>
         <TextView
             android:id="@+id/readMore_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ReadMore"
+            android:text="Read More"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:textSize="15sp"
+            android:textColor="#F9AA33"
             android:clickable="true"
             android:layout_gravity="end"/>
-
-        <TextView
-            android:id="@+id/source_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="source"
-            android:textSize="12sp"
-            android:layout_gravity="start"/>
 
     </LinearLayout>
 

@@ -36,6 +36,22 @@ class Adapter(val context: Context, val articles: List<Articles>) :
             i.putExtra("url", itemModel.url)
             context.startActivity(i)
         }
+        holder.headline.setOnClickListener{
+            val i: Intent = Intent(context, Webview::class.java)
+            i.putExtra("url", itemModel.url)
+            context.startActivity(i)
+        }
+        holder.imageView.setOnClickListener{
+            val i: Intent = Intent(context, Webview::class.java)
+            i.putExtra("url", itemModel.url)
+            context.startActivity(i)
+        }
+        holder.description.setOnClickListener{
+            val i: Intent = Intent(context, Webview::class.java)
+            i.putExtra("url", itemModel.url)
+            context.startActivity(i)
+        }
+
     }
 
     override fun getItemCount(): Int = articles.size
@@ -45,6 +61,5 @@ class Adapter(val context: Context, val articles: List<Articles>) :
         val description = itemView.findViewById<View>(R.id.description_tv) as TextView
         val imageView = itemView.findViewById<View>(R.id.imageview) as ImageView
         val readMore = itemView.findViewById<View>(R.id.readMore_tv) as TextView
-        val source = itemView.findViewById<View>(R.id.source_tv) as TextView
     }
 }
