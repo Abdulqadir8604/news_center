@@ -9,6 +9,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:padding="50dp"
         android:id="@+id/recyclerView"
         android:layout_width="409dp"
         android:layout_height="729dp"
