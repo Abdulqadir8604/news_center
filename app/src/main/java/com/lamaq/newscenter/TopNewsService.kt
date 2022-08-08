@@ -12,7 +12,7 @@ const val API_KEY =  "bb35820342c54275bea094772d3b2c78"
 
 interface TopNewsService {
 
-    @GET("/v2/top-headlines?apiKey=$API_KEY")
+    @GET("/v2/top-headlines?apikey=$API_KEY")
     fun getTopNews(@Query("country") country: String, @Query("page") page: Int, @Query("pageSize") pageSize:Int): Call<NewsList>
 
 }

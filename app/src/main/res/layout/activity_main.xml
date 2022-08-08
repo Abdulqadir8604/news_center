@@ -9,36 +9,31 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        app:boxBackgroundMode="filled"
-        app:boxStrokeColor="#f9aa33"
         android:layout_height="wrap_content"
-        app:boxCornerRadiusTopStart="50dp"
-        app:boxCornerRadiusBottomEnd="50dp"
-        android:hint="Search"
-        app:boxBackgroundColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="50dp"
         android:layout_gravity="center"
-        app:placeholderText="eg: movies, sports, etc"
-        android:textColorHint="#F9AA33"
-        android:background="@color/colorPrimary"
-        app:endIconCheckable="true"
-        app:hintTextColor="#F9AA33"
-        app:placeholderTextColor="#F9AA33"
-        app:boxStrokeWidth="0dp"
-        app:startIconDrawable="@drawable/ic_baseline_arrow_forward_ios"
-        app:endIconMode="custom"
-        app:endIconDrawable="@drawable/ic_search">
-
-        <com.google.android.material.textfield.TextInputEditText
+        android:foregroundGravity="center">
+        <EditText
             android:id="@+id/search_input"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
+            android:maxLines="1"
+            android:lines="1"
+            android:drawablePadding="5dp"
+            android:paddingEnd="5dp"
+            android:inputType="text"
+            android:textColor="#FFE1B4"
+            android:drawableStart="@drawable/ic_baseline_arrow_forward_ios"
+            android:drawableEnd="@drawable/ic_search"
+            android:hint="Search : "
+            android:textColorHint="#B69768"/>
+    </androidx.cardview.widget.CardView>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -64,7 +59,9 @@
                 android:textColor="#F9AA33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="general"/>
+                android:text="home"
+                android:drawableStart="@drawable/ic_baseline_home"
+                android:drawablePadding="5dp"/>
             <Button
                 android:id="@+id/btn2"
                 android:layout_margin="5dp"
@@ -132,6 +129,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:foregroundGravity="center"/>
+        android:foregroundGravity="center"
+        android:fitsSystemWindows="true" />
 
 </LinearLayout>

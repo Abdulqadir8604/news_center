@@ -8,8 +8,8 @@ import retrofit2.http.Query
 
 interface TopSearchNewsService:TopNewsService {
 
-    @GET("/v2/top-headlines?apiKey=$API_KEY")
-    fun getTopSearchNews(@Query("country") country: String, @Query("q") search: String, @Query("page") page: Int, @Query("pageSize") pageSize:Int): Call<NewsList>
+    @GET("/v2/everything?apiKey=$API_KEY")
+    fun getTopSearchNews(@Query("q") search: String, @Query("language") language: String, @Query("sortBy") sortBy: String, @Query("page") page: Int): Call<NewsList>
 
 }
 object TopSearchNewsApiService {
