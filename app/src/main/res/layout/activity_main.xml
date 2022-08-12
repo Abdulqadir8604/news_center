@@ -29,6 +29,7 @@
             android:paddingEnd="5dp"
             android:inputType="text"
             android:textColor="#FFE1B4"
+            android:imeOptions="actionSearch"
             android:drawableStart="@drawable/ic_baseline_arrow_forward_ios"
             android:drawableEnd="@drawable/ic_search"
             android:hint="Search : "

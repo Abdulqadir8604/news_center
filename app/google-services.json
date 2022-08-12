@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466787262211",
+    "project_id": "alpha-andriod-f66f0",
+    "storage_bucket": "alpha-andriod-f66f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466787262211:android:481acc8cbd4bdacbcc5336",
+        "android_client_info": {
+          "package_name": "com.lamaq.newscenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466787262211-afaf076v6oc343kos3uufh5a02qkom1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7sXGCVND-5tBpdWUmjV44g3B2wbglu2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466787262211-afaf076v6oc343kos3uufh5a02qkom1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

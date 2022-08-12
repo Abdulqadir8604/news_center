@@ -11,10 +11,16 @@
             android:gravity="center"/>
     </item>
 
-    <item android:bottom="20dp">
+    <item>
         <bitmap
             android:src="@drawable/branding"
             android:gravity="bottom"/>
+    </item>
+
+    <item android:top="40dp">
+        <bitmap
+            android:src="@drawable/app_name_text"
+            android:gravity="top"/>
     </item>
 
 </layer-list>

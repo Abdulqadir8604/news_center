@@ -32,22 +32,22 @@ class Adapter(val context: Context, val articles: List<Articles>) :
             .load(itemModel.urlToImage)
             .into(holder.imageView)
         holder.readMore.setOnClickListener {
-            val i: Intent = Intent(context, Webview::class.java)
+            val i = Intent(context, Webview::class.java)
             i.putExtra("url", itemModel.url)
             context.startActivity(i)
         }
         holder.headline.setOnClickListener{
-            val i: Intent = Intent(context, Webview::class.java)
+            val i = Intent(context, Webview::class.java)
             i.putExtra("url", itemModel.url)
             context.startActivity(i)
         }
         holder.imageView.setOnClickListener{
-            val i: Intent = Intent(context, Webview::class.java)
+            val i = Intent(context, Webview::class.java)
             i.putExtra("url", itemModel.url)
             context.startActivity(i)
         }
         holder.description.setOnClickListener{
-            val i: Intent = Intent(context, Webview::class.java)
+            val i = Intent(context, Webview::class.java)
             i.putExtra("url", itemModel.url)
             context.startActivity(i)
         }

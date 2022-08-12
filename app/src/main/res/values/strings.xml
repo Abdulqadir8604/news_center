@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">News Center</string>
+<!--    <string name="AdMob_app_ID">ca-app-pub-9217099860265775~7154901176</string>-->
+<!--    <string name="on_app_open_Ad_unit_ID">ca-app-pub-9217099860265775/9531714707</string>-->
+<!--    <string name="native_ad_unit_ID">ca-app-pub-9217099860265775/7256905153</string>-->
 </resources>
